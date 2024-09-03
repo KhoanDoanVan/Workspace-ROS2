@@ -1,0 +1,40 @@
+[0.500s] Invoking command in '/home/ubuntu/ros2_ws/build/my_robot_controller': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/ros2_ws/build/my_robot_controller/build
+[0.633s] running develop
+[0.702s] Removing /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[0.720s] Invoked command in '/home/ubuntu/ros2_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/ros2_ws/build/my_robot_controller/build
+[0.721s] Invoking command in '/home/ubuntu/ros2_ws/src/my_robot_controller': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/ubuntu/ros2_ws/build/my_robot_controller/build install --record /home/ubuntu/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data --force
+[0.835s] running egg_info
+[0.835s] writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[0.836s] writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[0.836s] writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[0.836s] writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[0.836s] writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[0.839s] reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.839s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.839s] running build
+[0.839s] running build_py
+[0.840s] running install
+[0.840s] running install_lib
+[0.840s] creating /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.841s] copying /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/my_first_node.py -> /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.841s] copying /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/draw_circle.py -> /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.841s] copying /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.841s] copying /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/pose_subscriber.py -> /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.842s] copying /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/turtle_controller.py -> /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.842s] byte-compiling /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/my_first_node.py to my_first_node.cpython-310.pyc
+[0.842s] byte-compiling /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/draw_circle.py to draw_circle.cpython-310.pyc
+[0.842s] byte-compiling /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc
+[0.843s] byte-compiling /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/pose_subscriber.py to pose_subscriber.cpython-310.pyc
+[0.843s] byte-compiling /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/turtle_controller.py to turtle_controller.cpython-310.pyc
+[0.843s] running install_data
+[0.843s] copying resource/my_robot_controller -> /home/ubuntu/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages
+[0.843s] copying package.xml -> /home/ubuntu/ros2_ws/install/my_robot_controller/share/my_robot_controller
+[0.843s] running install_egg_info
+[0.845s] Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[0.846s] running install_scripts
+[0.856s] Installing draw_circle script to /home/ubuntu/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.856s] Installing pose_subscriber script to /home/ubuntu/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.856s] Installing test_node script to /home/ubuntu/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.856s] Installing turtle_controller script to /home/ubuntu/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.857s] writing list of installed files to '/home/ubuntu/ros2_ws/build/my_robot_controller/install.log'
+[0.871s] Invoked command in '/home/ubuntu/ros2_ws/src/my_robot_controller' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/ubuntu/ros2_ws/build/my_robot_controller/build install --record /home/ubuntu/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data --force
