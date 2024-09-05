@@ -15,6 +15,13 @@
             <origin xyz="0 0 ${base_height / 2.0}" rpy="0 0 0"></origin> <!-- roll pitch yaw -->
             <material name="green" />
         </visual>
+        <collision>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}" /> <!--length width height-->
+            </geometry>
+            <origin xyz="0 0 ${base_height / 2.0}" rpy="0 0 0"></origin> <!-- roll pitch yaw -->
+            <material name="green" />
+        </collision>
         <xacro:box_inertia m="5.0" l="${base_length}" w="${base_width}" h="${base_height}"
                            xyz="0 0 ${base_height / 2.0}" rpy="0 0 0" />
     </link>
@@ -28,6 +35,15 @@
                 <origin xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
                 <material name="grey" />
             </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+                </geometry>
+                <origin xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
+                <material name="grey" />
+            </collision>
+            <xacro:cylinder_inertia m="1.0" l="${wheel_length}" r="${wheel_radius}"
+                                 xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
         </link>
     </xacro:macro>
 
@@ -53,11 +69,19 @@
     <link name="caster_wheel_link">
         <visual>
             <geometry>
-                <sphere radius="0.05" />
+                <sphere radius="${wheel_radius / 2.0}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="grey" />
         </visual>
+        <collision>
+            <geometry>
+                <sphere radius="${wheel_radius / 2.0}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </collision>
+        <xacro:sphere_inertia m="0.5" r="${wheel_radius / 2.0}" xyz=" 0 0 0" rpy="0 0 0" />
      </link>
 
      <joint name="base_caster_wheel_joint" type="continuous">

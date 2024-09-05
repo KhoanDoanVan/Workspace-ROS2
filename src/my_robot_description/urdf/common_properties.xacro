@@ -21,4 +21,27 @@
         </inertial>
     </xacro:macro>
 
+    <!-- wheel right/left inertia -->
+     <xacro:macro name="cylinder_inertia" params="m l r xyz rpy">
+        <inertial>
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <mass value="${m}" />
+            <inertia ixx="${(m/12) * (3*r*r + l*l)}" ixy="0" ixz="0"
+                     iyy="${(m/12) * (3*r*r + l*l)}" iyz="0"
+                     izz="${(m/2) * r*r}"
+            />
+        </inertial>
+     </xacro:macro>
+
+     <!-- caster wheel inertia -->
+      <xacro:macro name="sphere_inertia" params="m r xyz rpy">
+        <inertial>
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <mass value="${m}" />
+            <inertia ixx="${(2/5) * m * r*r}" ixy="0" ixz="0"
+                     iyy="${(2/5) * m * r*r}" iyz="0"
+                     izz="${(2/5) * m * r*r}"
+            />
+        </inertial>
+      </xacro:macro>
 </robot>

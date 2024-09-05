@@ -1,5 +1,4 @@
 /home/ubuntu/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
-/home/ubuntu/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/de.urdf
 /home/ubuntu/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
 /home/ubuntu/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf
 /home/ubuntu/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
